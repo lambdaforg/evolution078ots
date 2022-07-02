@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Orshabaal" tp="1" nameDescription="a orshabaal" race="blood" experience="12000" speed="275" manacost="0">
+    <health now="22400" max="22400"/>
+    <look type="35" head="20" body="30" legs="40" feet="50" corpse="2916"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="45"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-410" max="-1090"/>
+      <attack name="fire field" interval="7500" chance="75"/>
+      <attack name="great energy beam" interval="7000" chance="60" min="-600" max="-700"/>
+      <attack name="great fireball" interval="3000" chance="50" min="-300" max="-750"/>
+      <attack name="orshabaal berserk" interval="8000" chance="55"/>
+      <attack name="mana drain" interval="4000" chance="30"/>
+    </attacks>
+    <defenses armor="56" defense="60">
+      <defense name="light healing" interval="5000" chance="60" min="20" max="70"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="2">
+      <summon name="Demon" interval="1000" chance="10"/>
+    </summons>
+    <voices interval="2000" chance="5">
+      <voice sentence="PRAISED BE MY MASTERS, THE RUTHLESS SEVEN!"/>
+      <voice sentence="MUAHAHAHAHA!"/>
+    </voices>
+    <loot>
+      <item id="2152" countmax="7" chance1="50000" chancemax="0"/>
+      <item id="2393" chance="1000"/>
+      <item id="2470" chance="2000"/>
+      <item id="2522" chance="1333"/>
+      <item id="2158" chance="10000"/>
+      <item id="2319" chance="9000"/>
+      <item id="2462" chance="50000"/>
+      <item id="2153" chance="50000"/>
+      <item id="2472" chance="1857"/>
+      <item id="1987" chance="33333">
+        <inside>
+          <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+          <item id="2148" countmax="100" chance1="50000" chancemax="0"/>
+          <item id="2148" countmax="100" chance1="50000" chancemax="0"/>
+          <item id="2144" countmax="10" chance1="50000" chancemax="0"/>
+          <item id="2178" chance="100000"/>
+          <item id="2402" chance="50000"/>
+          <item id="2390" chance="2000"/>
+          <item id="2646" chance="3333"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

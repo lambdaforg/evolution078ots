@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Pirate Skeleton" species="human"  nameDescription="a pirate skeleton" race="undead" experience="85" speed="180" manacost="0">
+    <health now="190" max="190"/>
+    <look type="195" head="0" body="0" legs="0" feet="0" corpse="6070"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-60"/>
+    </attacks>
+    <defenses armor="27" defense="15"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="25" chance1="40000" chancemax="108"/>
+      <item id="2229" countmax="2" chance1="9727" chancemax="0"/>
+      <item id="2231" chance="14321"/>
+      <item id="5927" chance="10000">
+        <inside>
+          <item id="2376" chance="18402"/>
+          <item id="2449" chance="8491"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

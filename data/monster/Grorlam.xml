@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Grorlam" nameDescription="a grorlam" race="undead" experience="1600" speed="220" manacost="0">
+    <health now="2750" max="2750"/>
+    <look type="67" head="20" body="30" legs="40" feet="50" corpse="2952"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-50" max="-220"/>
+      <attack name="large rock" interval="1000" chance="100" min="-50" max="-150"/>
+    </attacks>
+    <defenses armor="30" defense="31">
+      <defense name="light healing" interval="7000" chance="60" min="20" max="70"/>
+      <defense name="haste" interval="3000" chance="25"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="2">
+      <summon name="Stone Golem" interval="2000" chance="18"/>
+    </summons>
+    <loot>
+      <item id="2148" countmax="20" chance1="100000" chancemax="0"/>
+      <item id="2483" chance="10000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="1295" chance="10000"/>
+          <item id="1294" countmax="5" chance1="20000" chancemax="0"/>
+          <item id="2395" chance="2500"/>
+          <item id="2050" chance="20000"/>
+          <item id="2580" chance="5000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

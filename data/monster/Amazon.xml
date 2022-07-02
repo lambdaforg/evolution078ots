@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Amazon" species="human" nameDescription="an amazon" race="blood" experience="60" speed="172" manacost="390">
+    <health now="110" max="110"/>
+    <look type="137" head="113" body="120" legs="114" feet="132" corpse="3065"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="1"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="3"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="throwing knife" interval="2000" chance="60" min="-17" max="-44"/>
+    </attacks>
+    <defenses armor="9" defense="13"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="Your head shall be mine!"/>
+      <voice sentence="Yeeee ha!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="21" chance1="100000" chancemax="0"/>
+      <item id="2467" chance="5000"/>
+      <item id="2385" chance="20000"/>
+      <item id="2229" countmax="3" chance1="10000" chancemax="0"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2385" chance="5000"/>
+          <item id="2050" chance="5000"/>
+          <item id="2125" chance="3333"/>
+          <item id="2690" countmax="2" chance1="20000" chancemax="0"/>
+          <item id="2147" countmax="2" chance1="3333" chancemax="0"/>
+          <item id="2050" chance="20000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Fire Elemental" nameDescription="a fire elemental" species="fire" race="blood" experience="220" speed="190" manacost="690">
+    <health now="280" max="280"/>
+    <look type="49" head="20" body="30" legs="40" feet="50" corpse="1492"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="1"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-25" max="-90"/>
+      <attack name="soul fire" interval="5000" chance="80"/>
+      <attack name="fireball" interval="4000" chance="70" min="-55" max="-115"/>
+      <attack name="fireball" interval="12000" chance="95" min="-55" max="-115"/>
+      <attack name="explosion" interval="4500" chance="80" min="-75" max="-165"/>
+      <attack name="explosion" interval="14000" chance="100" min="-75" max="-165"/>
+    </attacks>
+    <defenses armor="15" defense="15"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+  </monster>

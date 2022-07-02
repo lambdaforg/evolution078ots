@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Wild Warrior" species="human"  nameDescription="a wild warrior" race="blood" experience="55" speed="190" manacost="420">
+    <health now="120" max="120"/>
+    <look type="131" head="57" body="57" legs="57" feet="57" corpse="3128"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="1"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-40"/>
+    </attacks>
+    <defenses armor="15" defense="20"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="An enemy!"/>
+      <voice sentence="Gimme your money!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="30" chance1="100000" chancemax="0"/>
+      <item id="2511" chance="10000"/>
+      <item id="2465" chance="3333"/>
+      <item id="2509" chance="6666"/>
+      <item id="2530" chance="5000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2398" chance="10000"/>
+          <item id="2666" countmax="2" chance1="20000" chancemax="0"/>
+          <item id="2649" chance="20000"/>
+          <item id="2391" chance="909"/>
+          <item id="2110" chance="2000"/>
+          <item id="2459" chance="2500"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

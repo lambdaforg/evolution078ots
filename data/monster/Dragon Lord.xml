@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Dragon Lord" species="fire" nameDescription="a dragon lord" race="blood" experience="2100" speed="200" manacost="0">
+    <health now="1900" max="1900"/>
+    <look type="39" head="20" body="30" legs="40" feet="50" corpse="2881"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="210"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-62" max="-205"/>
+      <attack name="dragon firewave" interval="6000" chance="80" min="-50" max="-250"/>
+      <attack name="dragon fireball" interval="6000" chance="80" min="-95" max="-175"/>
+      <attack name="dragon firebomb" interval="7000" chance="40" min="-20" max="-20"/>
+    </attacks>
+    <defenses armor="32" defense="34">
+      <defense name="light healing" interval="6000" chance="70" min="30" max="80"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="YOU WILL BURN!"/>
+      <voice sentence="ZCHHHHHHH!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+      <item id="2672" countmax="2" chance1="20000" chancemax="0"/>
+      <item id="2033" chance="1818"/>
+      <item id="1976" chance="3333"/>
+      <item id="2413" chance="5000"/>
+      <item id="2498" chance="888"/>
+      <item id="2492" chance="733"/>
+      <item id="2414" chance="1000"/>
+      <item id="2546" countmax="5" chance1="2222" chancemax="0"/>
+      <item id="2796" countmax="1" chance1="6666" chancemax="0"/>
+      <item id="1987" chance="50000">
+        <inside>
+          <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+          <item id="2149" countmax="2" chance1="893" chancemax="0"/>
+          <item id="2392" chance="1428"/>
+          <item id="2146" countmax="2" chance1="3222" chancemax="0"/>
+          <item id="2528" chance="2333"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

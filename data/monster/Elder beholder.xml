@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Elder Beholder" tp="1" species="undead" nameDescription="an elder beholder" race="venom" experience="290" speed="170" manacost="0">
+    <health now="1100" max="1100"/>
+    <look type="108" head="20" body="30" legs="40" feet="50" corpse="3052"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="150"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-180"/>
+      <attack name="great fireball" interval="8000" chance="70" min="-60" max="-110"/>
+      <attack name="great energy beam" interval="5000" chance="70" min="-50" max="-160"/>
+    </attacks>
+    <defenses armor="35" defense="30"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="5">
+      <summon name="Beholder" interval="2000" chance="10"/>
+    </summons>
+    <voices interval="2000" chance="5">
+      <voice sentence="Inferior creatures, bow before my power!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="45" chance1="100000" chancemax="0"/>
+      <item id="1987" chance="80000">
+        <inside>
+          <item id="2148" countmax="20" chance1="80000" chancemax="0"/>
+          <item id="2423" chance="5000"/>
+          <item id="2391" chance="1333"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

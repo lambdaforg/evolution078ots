@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Ancient Scarab" species="poison" nameDescription="an ancient scarab" race="venom" experience="720" speed="212" manacost="0">
+    <health now="1000" max="1000"/>
+    <look type="79" head="20" body="30" legs="40" feet="50" corpse="3004"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-54" max="-180"/>
+      <attack name="poison field" interval="3000" chance="60"/>
+      <attack name="poison storm" interval="3000" chance="40" min="-75" max="-250"/>
+    </attacks>
+    <defenses armor="32" defense="33">
+      <defense name="haste" interval="10000" chance="40"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="5">
+      <summon name="Larva" interval="2000" chance="20"/>
+    </summons>
+    <loot>
+      <item id="2148" countmax="90" chance1="100000" chancemax="0"/>
+      <item id="2162" chance="2500"/>
+      <item id="2148" countmax="8" chance1="100000" chancemax="0"/>
+      <item id="2463" chance="2222"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2135" chance="1428"/>
+          <item id="2159" countmax="4" chance1="999" chancemax="0"/>
+          <item id="2149" countmax="4" chance1="555" chancemax="0"/>
+          <item id="2440" chance="1000"/>
+          <item id="2142" chance="800"/>
+          <item id="2443" chance="555"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+  <monster name="Phantasm" level="200" maglevel="100" experience="3300" pushable="0" armor="50" defense="35" canpushitems="1" staticattack="50" speed="290" summonable="0" convinceable="0" manacost="690">
+  	<health now="3950" max="3950" 
+  	<look type="241" head="20" body="30" legs="40" feet="50" corpse="6343" race="2"/>
+  	<combat targetdistance="1" runonhealth="0"/>
+  	<targetchange speed="2000" chance="5"/>
+  
+  <attacks>
+    <attack name="poison spit" speed="1000" min="-100" max="-200"/>
+    <attack name="poison spit" speed="300" min="-50" max="-100"/>
+  </attacks>
+  
+  
+  </monster>

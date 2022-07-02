@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Minotaur Archer" species="minotaur" nameDescription="a minotaur archer" race="blood" experience="65" speed="170" manacost="200">
+    <health now="100" max="100"/>
+    <look type="24" head="0" body="0" legs="0" feet="0" corpse="2871"/>
+    <targetchange/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="1"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="1"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="4"/>
+      <flag runonhealth="80"/>
+    </flags>
+    <attacks>
+      <attack name="bolt" interval="2000" chance="75" min="-10" max="-100"/>
+    </attacks>
+    <defenses armor="15" defense="20"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="28" chance1="100000" chancemax="0"/>
+      <item id="2543" countmax="18" chance1="70000" chancemax="0"/>
+      <item id="2666" countmax="3" chance1="50000" chancemax="0"/>
+      <item id="2483" chance="10000"/>
+      <item id="2481" chance="6666"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2455" chance="6666"/>
+          <item id="2465" chance="5000"/>
+          <item id="2464" chance="10000"/>
+          <item id="2648" chance="4000"/>
+          <item id="2458" chance="10000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

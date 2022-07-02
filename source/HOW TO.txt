@@ -1,0 +1,75 @@
+How to compile OTS
+
+First, download and install dev-c++ here
+do not continue unless dev-c++ is successfully installed!
+
+download the latest libxml dev-pak here
+run & install that too! (you can only install it if dev-c++ is successfully installed)
+
+download the latest boost dev-pak here
+run and install this, the same as libxml!
+
+download the lua dev-pak here
+run and install this, just the same as libxml and boost!
+
+download the libiconv dev-pak here
+run and install this just like the other ones
+
+If you don’t already have winrar, download that here: http://www.rarlab.com/download.htm
+And if you don’t already have the source you want, look for it and download it.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1) Now open Dev-C++
+
+2)Go to File>New Project. Choose “Console Application”
+
+3) Create a new folder in the folder “My Documents” named “OTServ”
+
+4) Save the Project in there (preferably as OTServ again)
+
+5) Now, extract your source into your “OTServ” folder.
+
+6) Go to Project>Add to Project.
+
+7) Add all your source files.
+
+Note: Only do step 8 if you want to use xml for your players, accounts, etc!
+8) On the “Project” window to the side, right click “database.cpp” and “database.h” and select “remove”. Do the same for any files that have “sql” in their name.
+
+Note: Only do step 9 if you want to use sql for your players, accounts, etc!
+9) On the “Project” window tothe side, any files that have “xml” in their name and select “remove”.
+
+10) On the “Project” window to the side, remove “main.cpp”.
+
+11) Your source should’ve come with a file named !compiling.txt (or c++ compiler.txt), which gives you information you need for compiling. Open that. (You can do it straight through Dev-cpp, no need to open My Documents to look for it)
+
+12) Go to Project>Project Options (or just hit alt+p) and press the “parameters” tab. Paste the contents of !compiling.txt here
+
+13) Click in the “linker” box so that the cursor goes there. Paste this there:
+-llibxml2
+-llua
+-llualib
+-lwsock32
+-s
+-Wl,-Map=otserv.map
+
+For the latest CVS / 7.8 servers, do the below as well as the rest of the tutorial:
+
+Add the glfw and gmp DevPaks from tools check for updates/packages… [in packman]
+
+Add
+Code:
+
+../../Dev-Cpp/lib/libboost_regex-mgw-mt-s-1_33_1.lib
+
+To the linker parameters
+
+14) Now close that by pressing the “OK” button.
+
+15) Go to execute>compile.
+Wait for it… it may take a minute, it may take 10. Just be patient. That’s why I don’t like compiling for other people.
+if there are any errors, post here, it’s probably a linker problem.
+
+16) If you compiled correctly, you’re still not done. Now along with the server there should be at least 5 dll files (most likely more).
+
+17) Now in a different window, open your “OTServ” folder. There should be a handful of new files in here. The one you’re looking for is “OTServ.exe”, it’ll be the one with the console window icon. Right click that and rename it to “Original Compiled Server”. Then copy it and paste it into the folder with those .dll files. (Those files are needed for it to run). If it doesn’t run properly, post here about the errors it says it has.

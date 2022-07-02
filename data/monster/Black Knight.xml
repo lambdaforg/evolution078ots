@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Black Knight" species="human" nameDescription="a black knight" race="blood" experience="1600" speed="390" manacost="0">
+    <health now="1800" max="1800"/>
+    <look type="131" head="95" body="95" legs="95" feet="95" corpse="3128"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-82" max="-275"/>
+      <attack name="spear" interval="1000" chance="100" min="-72" max="-180"/>
+      <attack name="berserk" interval="5000" chance="70"/>
+    </attacks>
+    <defenses armor="43" defense="45"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="No prisoners!"/>
+      <voice sentence="By Bolg's Blood!"/>
+      <voice sentence="You're no match for me!"/>
+      <voice sentence="NO MERCY!"/>
+      <voice sentence="MINE!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="10" chance1="100000" chancemax="0"/>
+      <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+      <item id="2476" chance="1000"/>
+      <item id="2489" chance="1428"/>
+      <item id="2490" chance="6666"/>
+      <item id="2381" chance="5000"/>
+      <item id="2389" countmax="1" chance1="20000" chancemax="0"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2463" chance="2500"/>
+          <item id="2148" countmax="15" chance1="100000" chancemax="0"/>
+          <item id="2120" chance="20000"/>
+          <item id="2387" chance="6666"/>
+          <item id="2377" chance="2857"/>
+          <item id="2430" chance="1333"/>
+          <item id="2414" chance="909"/>
+          <item id="2195" chance="555"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

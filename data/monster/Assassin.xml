@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Assassin" tp="1" species="human" nameDescription="an assassin" race="blood" experience="105" speed="224" manacost="0">
+    <health now="175" max="175"/>
+    <look type="129" head="114" body="114" legs="114" feet="114" corpse="3128"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="40"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-38" max="-78"/>
+      <attack name="throwing star" interval="3000" chance="50" min="-22" max="-47"/>
+    </attacks>
+    <defenses armor="21" defense="23">
+      <defense name="haste" interval="3000" chance="30"/>
+    </defenses>
+     <defense name="plinkvis" interval="2000" chance="30" duration="5000">
+        <attribute key="areaEffect" value="blueshimmer"/>
+      </defense>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="You are on my deathlist!"/>
+    </voices>
+  </monster>

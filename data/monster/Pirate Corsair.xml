@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Pirate Corsair" species="human"  nameDescription="a pirate corsair" race="blood" experience="350" speed="180" manacost="0">
+    <health now="675" max="675"/>
+    <look type="98" head="0" body="0" legs="0" feet="0" corpse="6080"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-50" max="-180"/>
+    </attacks>
+    <defenses armor="15" defense="20"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="74" chance1="40000" chancemax="108"/>
+      <item id="5264" chance="26"/>
+      <item id="2385" chance="10321"/>
+      <item id="2114" chance="104"/>
+      <item id="2489" chance="284"/>
+      <item id="2521" chance="587"/>
+      <item id="6096" chance="92"/>
+    </loot>
+  </monster>

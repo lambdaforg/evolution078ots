@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="infernal" nameDescription="an infernal" race="blood" experience="14300" speed="340" manacost="0">
+    <health now="16500" max="10600"/>
+    <look type="12" head="20" body="30" legs="40" feet="50" corpse="6080"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag canpushcreatures="1"/>
+      <flag staticattack="80"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+  <attacks>
+  
+      <attack name="melee" interval="2000" skill="110" attack="125"/>
+      <attack name="physical" interval="1000" chance="15" range="7" min="-190" max="-385">
+        <attribute key="shootEffect" value="largerock"/>
+      </attack>
+      <attack name="melee" interval="4000" skill="90" attack="120"/>
+  </attacks>
+    <defenses armor="55" defense="60">
+      <defense name="speed" interval="1000" chance="7" speedchange="400" duration="8000">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </defense>
+      <defense name="healing" interval="1000" chance="15" min="1000" max="2000">
+        <attribute key="areaEffect" value="blueshimmer"/>
+      </defense>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="70" chance1="100000" chancemax="0"/>
+      <item id="2666" countmax="3" chance1="33333" chancemax="0"/>
+      <item id="2393" chance="988"/>
+      <item id="2427" chance="388"/>
+      <item id="2495" chance="500"/> --demon legs
+      <item id="2528" chance="2500"/>
+      <item id="2529" chance="3333"/>
+      <item id="2647" chance="4000"/>
+      <item id="2462" chance="1100"/>
+      <item id="2459" chance="5000"/>
+      <item id="5930" countmax="1" chance1="400" chancemax="0"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2148" countmax="70" chance1="100000" chancemax="0"/>
+          <item id="2671" countmax="3" chance1="100000" chancemax="0"/>
+          <item id="2377" chance="2222"/>
+          <item id="2439" chance="988"/>
+          <item id="2496" chance="600"/> --honed helmet
+          <item id="2391" chance="1333"/>
+          <item id="5930" countmax="1" chance1="1500" chancemax="0"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

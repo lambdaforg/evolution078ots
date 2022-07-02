@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Novice of the Cult" species="human" nameDescription="a novice of the cult" race="blood" experience="100" speed="180" manacost="0">
+    <health now="285" max="285"/>
+    <look type="133" head="114" body="95" legs="114" feet="114" corpse="6080"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="42"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-80"/>
+      <attack name="poison field" interval="1000" chance="100" min="-30" max="-70"/>
+      <attack name="poison spit" interval="5000" chance="50"/>
+    </attacks>
+    <defenses armor="15" defense="20"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <summons max="3">
+      <summon name="Chicken" interval="2000" chance="30"/>
+    </summons>
+    <voices interval="2000" chance="5">
+      <voice sentence="Fear us!"/>
+      <voice sentence="You will not tell anyone what you have seen."/>
+      <voice sentence="Your curiosity will be punished!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="21" chance1="40000" chancemax="954"/>
+      <item id="2661" chance="12793"/>
+      <item id="2145" countmax="3" chance1="5000" chancemax="0"/>
+      <item id="2199" chance="7367"/>
+      <item id="2190" chance="1826"/>
+      <item id="5810" chance="491"/>
+      <item id="6087" chance="5839"/>
+      <item id="2213" chance="14822"/>
+      <item id="2478" chance="8236"/>
+      <item id="2398" chance="18427"/>
+    </loot>
+  </monster>

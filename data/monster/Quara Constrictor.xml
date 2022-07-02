@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Quara Constrictor" species="water"  nameDescription="a quara constrictor" race="undead" experience="250" speed="180" manacost="0">
+    <health now="450" max="450"/>
+    <look type="46" head="0" body="0" legs="0" feet="0" corpse="6065"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-172"/>
+      <attack name="berserk" interval="5000" chance="70"/>
+    </attacks>
+    <defenses armor="15" defense="20"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="Boohaa!"/>
+      <voice sentence="Tssss!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="30" chance1="100000" chancemax="0"/>
+      <item id="2460" chance="15000"/>
+      <item id="2381" chance="13000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2148" countmax="15" chance1="17000" chancemax="0"/>
+          <item id="2397" chance="17000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

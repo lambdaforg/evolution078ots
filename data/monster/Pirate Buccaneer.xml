@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Pirate Buccaneer" species="human"  nameDescription="a pirate buccaneer" race="blood" experience="250" speed="180" manacost="0">
+    <health now="425" max="425"/>
+    <look type="97" head="0" body="0" legs="0" feet="0" corpse="6080"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-130"/>
+    </attacks>
+    <defenses armor="15" defense="20"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="Give up!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="43" chance1="40000" chancemax="350"/>
+      <item id="2050" chance="6666"/>
+      <item id="2385" chance="2057"/>
+      <item id="2463" chance="504"/>
+      <item id="2238" chance="10045"/>
+    </loot>
+  </monster>

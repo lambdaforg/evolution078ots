@@ -1,0 +1,234 @@
+# Project: Evolutions-SQL
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Evolutions-SQL_private.res
+OBJ  = ../account.o ../actions.o ../admin.o ../allocator.o ../ban.o ../baseevents.o ../beds.o ../chat.o ../combat.o ../commands.o ../condition.o ../configmanager.o ../container.o ../creature.o ../cylinder.o ../database.o ../databasemysql.o ../depot.o ../exception.o ../fileloader.o ../game.o ../guilds.o ../house.o ../housetile.o ../ioaccount.o ../ioaccountsql.o ../iomapotbm.o ../iomapserialize.o ../iomapserializesql.o ../iomapserializexml.o ../iomapxml.o ../ioplayer.o ../ioplayersql.o ../item.o ../itemloader.o ../items.o ../logger.o ../luascript.o ../mailbox.o ../map.o ../monster.o ../monsters.o ../movement.o ../networkmessage.o ../npc.o ../otserv.o ../outfit.o ../party.o ../player.o ../position.o ../protocol79.o ../pvparena.o ../raids.o ../rsa.o ../scheduler.o ../scriptmanager.o ../spawn.o ../spells.o ../status.o ../talkaction.o ../teleport.o ../thing.o ../tile.o ../tools.o ../trashholder.o ../vocation.o ../waitlist.o ../weapons.o $(RES)
+LINKOBJ  = ../account.o ../actions.o ../admin.o ../allocator.o ../ban.o ../baseevents.o ../beds.o ../chat.o ../combat.o ../commands.o ../condition.o ../configmanager.o ../container.o ../creature.o ../cylinder.o ../database.o ../databasemysql.o ../depot.o ../exception.o ../fileloader.o ../game.o ../guilds.o ../house.o ../housetile.o ../ioaccount.o ../ioaccountsql.o ../iomapotbm.o ../iomapserialize.o ../iomapserializesql.o ../iomapserializexml.o ../iomapxml.o ../ioplayer.o ../ioplayersql.o ../item.o ../itemloader.o ../items.o ../logger.o ../luascript.o ../mailbox.o ../map.o ../monster.o ../monsters.o ../movement.o ../networkmessage.o ../npc.o ../otserv.o ../outfit.o ../party.o ../player.o ../position.o ../protocol79.o ../pvparena.o ../raids.o ../rsa.o ../scheduler.o ../scriptmanager.o ../spawn.o ../spells.o ../status.o ../talkaction.o ../teleport.o ../thing.o ../tile.o ../tools.o ../trashholder.o ../vocation.o ../waitlist.o ../weapons.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -L"C:/Dev-Cpp/others/lua-5.1/lib" -L"C:/Dev-Cpp/others/boost_1_33_1/libregex" -llibxml2 -lmysql -llua -llualib -lwsock32 C:/Dev-Cpp/lib/libboost_regex-mgw-mt-s-1_33_1.lib -lgmp -s  
+INCS =  -I"C:/Dev-Cpp/include"  -I"C:/Dev-Cpp/others/boost_1_33_1" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/Dev-Cpp/others/boost_1_33_1" 
+BIN  = Evolutions-SQL.exe
+CXXFLAGS = $(CXXINCS) -D__WINDOWS__ -D__SKULLSYSTEM__ -D__PARTYSYSTEM__ -D__DEBUG_PLAYERS__ -D__USE_MYSQL__ -D__XID_BUY_SELL__ -D__TLM_SERVER_SAVE__ -D__XID_CVS_MODS__ -D__XID_PREMIUM_SYSTEM__ -D__PB_BUY_HOUSE__ -D__XID_LEAVE_HOUSE__ -D__YUR_GUILD_SYSTEM__ -D__TR_ANTI_AFK__ -D__XID_CMD_EXT__ -D__TC_BROADCAST_COLORS__ -D__XID_CTRL_Z__ -D__SILV_MC_CHECK__ -D__YUR_SHUTDOWN__ -D__YUR_CLEAN_MAP__ -D__XID_ROOKGARD__ -D__TC_GM_INVISIBLE__ -D__XID_LEARN_SPELLS__ -D__JD_DEATH_LIST__ -D__XID_CONFIG_CAP__ -D__XID_PREVENT_LOSS__ -D__UCB_ONLINE_LIST__ -D__XID_ACCOUNT_MANAGER__ -D__XID_CTRL_Y__ -D__XID_ADD_SKILLLEVEL__ -D__XID_SUMMONS_FOLLOW__ -D__XID_PVP_FEATURES__ -D__XID_PROTECTION_SYSTEM__ -D__JD_BED_SYSTEM__ -D__XID_SEPERATE_ADDONS__ -D__NFS_PVP_ARENA__ -D__XID_EXPERIENCE_STAGES__ -D__XID_BLESS_SYSTEM__  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Evolutions-SQL.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Evolutions-SQL.exe" $(LIBS)
+
+../account.o: ../account.cpp
+	$(CPP) -c ../account.cpp -o ../account.o $(CXXFLAGS)
+
+../actions.o: ../actions.cpp
+	$(CPP) -c ../actions.cpp -o ../actions.o $(CXXFLAGS)
+
+../admin.o: ../admin.cpp
+	$(CPP) -c ../admin.cpp -o ../admin.o $(CXXFLAGS)
+
+../allocator.o: ../allocator.cpp
+	$(CPP) -c ../allocator.cpp -o ../allocator.o $(CXXFLAGS)
+
+../ban.o: ../ban.cpp
+	$(CPP) -c ../ban.cpp -o ../ban.o $(CXXFLAGS)
+
+../baseevents.o: ../baseevents.cpp
+	$(CPP) -c ../baseevents.cpp -o ../baseevents.o $(CXXFLAGS)
+
+../beds.o: ../beds.cpp
+	$(CPP) -c ../beds.cpp -o ../beds.o $(CXXFLAGS)
+
+../chat.o: ../chat.cpp
+	$(CPP) -c ../chat.cpp -o ../chat.o $(CXXFLAGS)
+
+../combat.o: ../combat.cpp
+	$(CPP) -c ../combat.cpp -o ../combat.o $(CXXFLAGS)
+
+../commands.o: ../commands.cpp
+	$(CPP) -c ../commands.cpp -o ../commands.o $(CXXFLAGS)
+
+../condition.o: ../condition.cpp
+	$(CPP) -c ../condition.cpp -o ../condition.o $(CXXFLAGS)
+
+../configmanager.o: ../configmanager.cpp
+	$(CPP) -c ../configmanager.cpp -o ../configmanager.o $(CXXFLAGS)
+
+../container.o: ../container.cpp
+	$(CPP) -c ../container.cpp -o ../container.o $(CXXFLAGS)
+
+../creature.o: ../creature.cpp
+	$(CPP) -c ../creature.cpp -o ../creature.o $(CXXFLAGS)
+
+../cylinder.o: ../cylinder.cpp
+	$(CPP) -c ../cylinder.cpp -o ../cylinder.o $(CXXFLAGS)
+
+../database.o: ../database.cpp
+	$(CPP) -c ../database.cpp -o ../database.o $(CXXFLAGS)
+
+../databasemysql.o: ../databasemysql.cpp
+	$(CPP) -c ../databasemysql.cpp -o ../databasemysql.o $(CXXFLAGS)
+
+../depot.o: ../depot.cpp
+	$(CPP) -c ../depot.cpp -o ../depot.o $(CXXFLAGS)
+
+../exception.o: ../exception.cpp
+	$(CPP) -c ../exception.cpp -o ../exception.o $(CXXFLAGS)
+
+../fileloader.o: ../fileloader.cpp
+	$(CPP) -c ../fileloader.cpp -o ../fileloader.o $(CXXFLAGS)
+
+../game.o: ../game.cpp
+	$(CPP) -c ../game.cpp -o ../game.o $(CXXFLAGS)
+
+../guilds.o: ../guilds.cpp
+	$(CPP) -c ../guilds.cpp -o ../guilds.o $(CXXFLAGS)
+
+../house.o: ../house.cpp
+	$(CPP) -c ../house.cpp -o ../house.o $(CXXFLAGS)
+
+../housetile.o: ../housetile.cpp
+	$(CPP) -c ../housetile.cpp -o ../housetile.o $(CXXFLAGS)
+
+../ioaccount.o: ../ioaccount.cpp
+	$(CPP) -c ../ioaccount.cpp -o ../ioaccount.o $(CXXFLAGS)
+
+../ioaccountsql.o: ../ioaccountsql.cpp
+	$(CPP) -c ../ioaccountsql.cpp -o ../ioaccountsql.o $(CXXFLAGS)
+
+../iomapotbm.o: ../iomapotbm.cpp
+	$(CPP) -c ../iomapotbm.cpp -o ../iomapotbm.o $(CXXFLAGS)
+
+../iomapserialize.o: ../iomapserialize.cpp
+	$(CPP) -c ../iomapserialize.cpp -o ../iomapserialize.o $(CXXFLAGS)
+
+../iomapserializesql.o: ../iomapserializesql.cpp
+	$(CPP) -c ../iomapserializesql.cpp -o ../iomapserializesql.o $(CXXFLAGS)
+
+../iomapserializexml.o: ../iomapserializexml.cpp
+	$(CPP) -c ../iomapserializexml.cpp -o ../iomapserializexml.o $(CXXFLAGS)
+
+../iomapxml.o: ../iomapxml.cpp
+	$(CPP) -c ../iomapxml.cpp -o ../iomapxml.o $(CXXFLAGS)
+
+../ioplayer.o: ../ioplayer.cpp
+	$(CPP) -c ../ioplayer.cpp -o ../ioplayer.o $(CXXFLAGS)
+
+../ioplayersql.o: ../ioplayersql.cpp
+	$(CPP) -c ../ioplayersql.cpp -o ../ioplayersql.o $(CXXFLAGS)
+
+../item.o: ../item.cpp
+	$(CPP) -c ../item.cpp -o ../item.o $(CXXFLAGS)
+
+../itemloader.o: ../itemloader.cpp
+	$(CPP) -c ../itemloader.cpp -o ../itemloader.o $(CXXFLAGS)
+
+../items.o: ../items.cpp
+	$(CPP) -c ../items.cpp -o ../items.o $(CXXFLAGS)
+
+../logger.o: ../logger.cpp
+	$(CPP) -c ../logger.cpp -o ../logger.o $(CXXFLAGS)
+
+../luascript.o: ../luascript.cpp
+	$(CPP) -c ../luascript.cpp -o ../luascript.o $(CXXFLAGS)
+
+../mailbox.o: ../mailbox.cpp
+	$(CPP) -c ../mailbox.cpp -o ../mailbox.o $(CXXFLAGS)
+
+../map.o: ../map.cpp
+	$(CPP) -c ../map.cpp -o ../map.o $(CXXFLAGS)
+
+../monster.o: ../monster.cpp
+	$(CPP) -c ../monster.cpp -o ../monster.o $(CXXFLAGS)
+
+../monsters.o: ../monsters.cpp
+	$(CPP) -c ../monsters.cpp -o ../monsters.o $(CXXFLAGS)
+
+../movement.o: ../movement.cpp
+	$(CPP) -c ../movement.cpp -o ../movement.o $(CXXFLAGS)
+
+../networkmessage.o: ../networkmessage.cpp
+	$(CPP) -c ../networkmessage.cpp -o ../networkmessage.o $(CXXFLAGS)
+
+../npc.o: ../npc.cpp
+	$(CPP) -c ../npc.cpp -o ../npc.o $(CXXFLAGS)
+
+../otserv.o: ../otserv.cpp
+	$(CPP) -c ../otserv.cpp -o ../otserv.o $(CXXFLAGS)
+
+../outfit.o: ../outfit.cpp
+	$(CPP) -c ../outfit.cpp -o ../outfit.o $(CXXFLAGS)
+
+../party.o: ../party.cpp
+	$(CPP) -c ../party.cpp -o ../party.o $(CXXFLAGS)
+
+../player.o: ../player.cpp
+	$(CPP) -c ../player.cpp -o ../player.o $(CXXFLAGS)
+
+../position.o: ../position.cpp
+	$(CPP) -c ../position.cpp -o ../position.o $(CXXFLAGS)
+
+../protocol79.o: ../protocol79.cpp
+	$(CPP) -c ../protocol79.cpp -o ../protocol79.o $(CXXFLAGS)
+
+../pvparena.o: ../pvparena.cpp
+	$(CPP) -c ../pvparena.cpp -o ../pvparena.o $(CXXFLAGS)
+
+../raids.o: ../raids.cpp
+	$(CPP) -c ../raids.cpp -o ../raids.o $(CXXFLAGS)
+
+../rsa.o: ../rsa.cpp
+	$(CPP) -c ../rsa.cpp -o ../rsa.o $(CXXFLAGS)
+
+../scheduler.o: ../scheduler.cpp
+	$(CPP) -c ../scheduler.cpp -o ../scheduler.o $(CXXFLAGS)
+
+../scriptmanager.o: ../scriptmanager.cpp
+	$(CPP) -c ../scriptmanager.cpp -o ../scriptmanager.o $(CXXFLAGS)
+
+../spawn.o: ../spawn.cpp
+	$(CPP) -c ../spawn.cpp -o ../spawn.o $(CXXFLAGS)
+
+../spells.o: ../spells.cpp
+	$(CPP) -c ../spells.cpp -o ../spells.o $(CXXFLAGS)
+
+../status.o: ../status.cpp
+	$(CPP) -c ../status.cpp -o ../status.o $(CXXFLAGS)
+
+../talkaction.o: ../talkaction.cpp
+	$(CPP) -c ../talkaction.cpp -o ../talkaction.o $(CXXFLAGS)
+
+../teleport.o: ../teleport.cpp
+	$(CPP) -c ../teleport.cpp -o ../teleport.o $(CXXFLAGS)
+
+../thing.o: ../thing.cpp
+	$(CPP) -c ../thing.cpp -o ../thing.o $(CXXFLAGS)
+
+../tile.o: ../tile.cpp
+	$(CPP) -c ../tile.cpp -o ../tile.o $(CXXFLAGS)
+
+../tools.o: ../tools.cpp
+	$(CPP) -c ../tools.cpp -o ../tools.o $(CXXFLAGS)
+
+../trashholder.o: ../trashholder.cpp
+	$(CPP) -c ../trashholder.cpp -o ../trashholder.o $(CXXFLAGS)
+
+../vocation.o: ../vocation.cpp
+	$(CPP) -c ../vocation.cpp -o ../vocation.o $(CXXFLAGS)
+
+../waitlist.o: ../waitlist.cpp
+	$(CPP) -c ../waitlist.cpp -o ../waitlist.o $(CXXFLAGS)
+
+../weapons.o: ../weapons.cpp
+	$(CPP) -c ../weapons.cpp -o ../weapons.o $(CXXFLAGS)
+
+Evolutions-SQL_private.res: Evolutions-SQL_private.rc 
+	$(WINDRES) -i Evolutions-SQL_private.rc --input-format=rc -o Evolutions-SQL_private.res -O coff 

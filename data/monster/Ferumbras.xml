@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Ferumbras" nameDescription="a ferumbras" race="blood" experience="25000" speed="200" manacost="0">
+    <health now="15000" max="15000"/>
+    <look type="229" head="20" body="30" legs="40" feet="50" corpse="2916"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-400" max="-1500"/>
+      <attack name="ultimate explosion" interval="5000" chance="70" min="-1000" max="-1400"/>
+      <attack name="great energy beam" interval="4000" chance="50" min="-300" max="-700"/>
+      <attack name="great fireball" interval="7000" chance="50" min="-200" max="-625"/>
+    </attacks>
+    <defenses armor="30" defense="30">
+      <defense name="ultimate healing" interval="5000" chance="80" min="300" max="500"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="8">
+      <summon name="Demon" interval="4000" chance="10"/>
+    </summons>
+    <voices interval="2000" chance="5">
+      <voice sentence="Ferumbras is back!"/>
+      <voice sentence="Hail Zathroth!"/>
+      <voice sentence="Hail the Ruthless Seven!"/>
+      <voice sentence="Human power should be equaled to the earth's crust!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+      <item id="2148" countmax="25" chance1="100000" chancemax="0"/>
+      <item id="2393" chance="909"/>
+      <item id="2514" chance="200"/>
+      <item id="2432" chance="1000"/>
+      <item id="2472" chance="150"/>
+      <item id="2453" chance="400"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2678" countmax="3" chance1="10000" chancemax="0"/>
+          <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+          <item id="2151" countmax="4" chance1="4000" chancemax="0"/>
+          <item id="2462" chance="555"/>
+          <item id="2149" countmax="3" chance1="1428" chancemax="0"/>
+          <item id="2171" chance="1333"/>
+          <item id="2387" chance="6666"/>
+          <item id="2470" chance="200"/>
+          <item id="2520" chance="333"/>
+          <item id="2418" chance="833"/>
+          <item id="2377" chance="3333"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

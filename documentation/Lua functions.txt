@@ -1,0 +1,145 @@
+	getPlayerFood(uid) -- Returns the food ticks of player
+	getPlayerHealth(uid) -- Returns the player's health
+	getPlayerMana(uid) -- Returns the player's mana
+	getPlayerLevel(uid) -- Returns the player's level
+	getPlayerMagLevel(uid) -- Returns the player's magic level
+	getPlayerName(uid) -- Returns the player's name
+	getPlayerAccess(uid) -- Returns the player's access
+	getPlayerPosition(uid) -- Returns the player's position
+	getPlayerSkill(uid,skillid) -- Returns the player's skill level of a skill
+	getPlayerMasterPos(cid) -- Returns the player's temple position
+	getPlayerTown(cid) -- Returns the player's town-id
+	getPlayerVocation(cid) -- Returns the player's vocation
+	getPlayerItemCount(cid,itemid) -- Returns the amount of an item that the player has
+	getPlayerSoul(cid) -- Returns the player's soul
+	getPlayerFreeCap(cid) -- Returns the player's free capacity
+	getPlayerLight(cid) -- Returns the player's light ticks
+	getPlayerSlotItem(cid, slot) -- Returns an item if an item is found in the slot
+	getPlayerDepotItems(uid, depotid) -- Returns the player's depot items of a decent depot
+	getPlayerSex(cid) -- Returns the player's gender
+	getPlayerLookDir(cid) -- Returns the player's look direction
+	getPlayerStorageValue(uid,valueid) -- Returns the value of the value id of a player
+	setPlayerStorageValue(uid,valueid, newvalue) -- Adds a new value-id to the storage map of player
+	getGlobalStorageValue(valueid) -- Returns the value of the value id
+	setGlobalStorageValue(valueid, newvalue) -- Adds a new value-id to the storage map
+	getTilePzInfo(pos) 1 is pz. 0 no pz. -- Returns the protection zone status of a tile
+	getTileHouseInfo(pos). 0 no house. != 0 house id -- Returns the house status of a tile
+	getItemRWInfo(uid) -- Check if the item is writeable
+	getThingfromPos(pos) -- Returns something that matches the position
+	getThingPos(uid) -- Returns the position of something
+	doRemoveItem(uid,n) -- Removes any item (from the map or player doesn't matter)
+	doPlayerFeed(uid,food) -- Increase the food ticks of a player
+	doPlayerSendCancel(uid,text) -- Send any cancel message to a player
+	doPlayerSendDefaultCancel(uid, ReturnValue) -- Send a cancel message to player
+	doTeleportThing(uid,newpos) -- Teleports something to a position
+	doTransformItem(uid,toitemid) -- Changes the item's id
+	doPlayerSay(uid,text,type) -- Let's the player say any text
+	doSendMagicEffect(position,type) -- Show a magic effect at a position
+	doChangeTypeItem(uid,new_type) -- Change the type/count of an item
+	doSetItemActionId(uid,actionid) -- Set the item's action id
+	doSetItemText(uid,text) -- Set the text of an item if you open it
+	doSetItemSpecialDescription(uid,desc) -- Set an item's description
+	doSendAnimatedText(position,text,color) -- Show animated text at a position (any text or color)
+	doPlayerAddSkillTry(cid,skillid,tries) -- Add skill tries to a decent skill
+	doPlayerAddHealth(cid,health) -- Add health to a player
+	doCreatureAddHealth(cid,health) -- Add health to a creature
+	doPlayerAddMana(cid,mana) -- Add mana to a player
+	doPlayerAddSoul(cid,soul) -- Add soul points to a player
+	doPlayerAddItem(cid,itemid,count or type) -- Add an item to a player -- returns uid of the created item
+	doPlayerSendTextMessage(cid,MessageClasses,message) -- Send a message to a player
+	doPlayerRemoveMoney(cid,money) -- Remove money from a player
+	doShowTextWindow(cid,maxlen,canWrite) -- Show a text dialog which is writable
+	doShowTextDialog(cid,itemid,text) -- Show a text dialog to a player that contains text
+	doDecayItem(uid) -- Start to decay an item
+	doCreateItem(itemid,type or count,position) -- Only working on ground; Returns uid of the created item
+	doSummonCreature(name, position) -- Creates a creature
+	doMoveCreature(cid, direction) -- Move a creature to a decent direction
+	doPlayerSetMasterPos(cid,pos) -- Set the player's temple position
+	doPlayerSetTown(cid,townid) -- Set the player's town-id
+	doPlayerSetVocation(cid,voc) -- Set the player's vocation
+	doPlayerRemoveItem(cid,itemid,count) -- Remove an item from a player
+	doPlayerAddExp(cid,exp) -- Add experience to a player
+	doSetCreatureLight(cid, lightLevel, lightColor, time) -- Add a new light condtion to a player
+	isPlayer(cid) -- Check if something is a creature
+	isCreature(cid) -- Check if something is a creature
+	isContainer(uid)-- Check if something is a container
+	isMoveable(uid) -- Check if something is moveable
+	getPlayerByName(name) -- Returns a player if the name matches any player on the server
+	registerCreature(cid) -- Returns and adds a new creature to the script
+	getContainerSize(uid) -- Returns the size of a container
+	getContainerCap(uid) -- Returns the capacity of a container
+	getContainerItem(uid, slot) -- Check if the slot contains a container
+	doAddContainerItem(uid, itemid, count or subtype) -- Add an item to a container
+	getHouseOwner(houseid) -- Returns the owner of a house
+	getHouseName(houseid) -- Returns the name of a house
+	getHouseEntry(houseid) -- Return the entry-position of a house
+	getHouseRent(houseid) -- Returns the rent of a house
+	getHouseTown(houseid) -- Returns the town-id of a house
+	getHouseAccessList(houseod, listid) -- Returns the house-id of a house that matches the listid
+	getHouseByPlayerName(playername) -- Returns the house-id of a house that matches the player's name
+	setHouseAccessList(houseid, listid, listtext) -- Set the accesslist of a door or anything else in a house
+	setHouseOwner(houseid, ownername) -- Set the owner of a house
+	getWorldType() -- Returns the worldtype (0 = no-pvp, 1 = pvp, 2 = pvp-enf)
+	getWorldTime() -- Returns the ingame time
+	getWorldLight() -- Returns the light level of the server
+	getWorldCreatures(type) Returns the amount of creatures (0 players, 1 monsters, 2 npcs, 3 all)
+	getWorldUpTime() -- Returns the uptime of the server
+	createCombatArea( {area}, {extArea} ) -- Create a new combat area
+	createConditionObject(type) -- Creates a new condition (condition-type required)
+	setCombatArea(combat, area) -- Set the area of a combat object
+	setCombatCondition(combat, condition) -- Adds a condtion to a combat object
+	setCombatParam(combat, key, value) -- Adds a parameter to a combat object with a decent value
+	setConditionParam(condition, key, value) -- Adds a parameter to a condition with a decent value
+	addDamageCondition(condition, key, rounds, time, value) -- Adds a damage value to a condtion
+	addOutfitCondition(condition, lookTypeEx, lookType, lookHead, lookBody, lookLegs, lookFeet) -- Adds a new outfit condtion to a creature
+	setCombatCallBack(combat, key, function_name) -- Set the callback of a combat object
+	setCombatFormula(combat, type, mina, minb, maxa, maxb) -- Set the combat's formula
+	setConditionFormula(combat, mina, minb, maxa, maxb) -- Set the condition's formula
+	doCombat(cid, combat, param) -- Execute the combat object
+	createCombatObject() -- Creates a new combat object
+	doAreaCombatHealth(cid, type, pos, area, min, max, effect) -- Change any creature's health (area)
+	doTargetCombatHealth(cid, target, type, min, max, effect) -- Change any creature's health (target)
+	doAreaCombatMana(cid, pos, area, min, max, effect) -- Change any creature's mana (area)
+	doTargetCombatMana(cid, target, min, max, effect) -- Change any creature's mana (target)
+	doAreaCombatCondition(cid, pos, area, condition, effect) -- Adds a condition (area)
+	doTargetCombatCondition(cid, target, condition, effect) -- Adds a condition (target)
+	doAreaCombatDispel(cid, pos, area, type, effect) -- Removes a condition (area)
+	doTargetCombatDispel(cid, target, type, effect) -- Removes a condition (target)
+	doChallengeCreature(cid, target) -- Challenge a creature
+	doConvinceCreature(cid, target) -- Convince a creature
+	doChangeSpeed(cid, delta) -- Change the creature's speed
+	doSetMonsterOutfit(cid, name, time) -- Sets the creature's outfit to a monster look
+	doSetItemOutfit(cid, item, time) -- Sets the creature's outfit to an item
+	doSetCreatureOutfit(cid, outfit, time) -- Sets the creature's outfit (table required)
+	getCreatureOutfit(cid) -- Returns the creature's outfit (in a table)
+	getCreaturePosition(cid) -- Returns the creature's position (in a table)
+	getCreatureName(cid) -- Returns the name of a creature
+	isItemStackable(itemid) -- Check if an item is stackable
+	isItemRune(itemid) -- Check if an item is a rune
+	isItemDoor(itemid) -- Check if an item is a door
+	isItemContainer(itemid) -- Check if an item is a container
+	isItemFluidContainer(itemid) -- Check if an item is a fluid
+	getItemName(itemid) -- Returns the item's name
+	getPlayerSkull(cid) -- Returns the skull-type of a player
+	getPlayerConditionTicks(cid, conditionid) -- Returns the ticks of a decent condtion of a player
+	doPlayerAddAddon(cid, looktype, addon) -- Add an addon to an outfit of the player
+	getPlayerOutfitAddon(cid, looktype) -- Returns the addon-value of an outfit of a player
+	getItemStackable(itemid) -- Check if the item is stackable
+	isPremium(cid) -- Check if the player is premium
+	addPremium(cid, days) -- Add x days to the player's account
+	foundNewGuild(guildname) -- Create a new guild
+	getPlayerGuildStatus(name) -- Returns the player's guild status
+	setPlayerGuildStatus(guildstatus, name) -- Set the player's guild status
+	getPlayerGuildName(name) -- Returns the guild's name if the player has a guild
+	setPlayerGuild(name, guildstatus, guilrank, guildname) -- Edit the guild stats of a player
+	clearPlayerGuild(name) -- Remove a player from a guild
+	setPlayerGuildNick(name, guildnick) -- Set the nick of the player
+	setPlayerGuildTitle(name, guildnick) -- Set the nick of the player
+	doPlayerLearnSpell(cid, spellwords) -- Learn a spell to a player
+	doPlayerAddBlesing(cid, blessid) -- Add a blessing to a player
+	getPlayerBlessing(cid, blessid) -- Check if the player has this blessing
+	debugPrint(text) -- Print a message in the console
+	isInArray(array, value) -- Check if an array contains a decent value
+	addEvent(callback, delay, parameter) -- Add an event
+	stopEvent(eventid) -- Stops an added event
+	getDataDir() -- Returns a string that is the data directory

@@ -1,0 +1,205 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MYINPUTBOX          ICON    DISCARDABLE     "otserv.ico"
+IDI_SMALL               ICON    DISCARDABLE     "otserv.ico" 
+IDB_BITMAP1 BITMAP "logo.bmp"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MYINPUTBOX MENU DISCARDABLE 
+BEGIN
+    POPUP "&Client"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Set Server",             IDM_SET_SERVER
+        MENUITEM "&Connect Server",         IDM_CONNECT
+        MENUITEM "&Disconnect Server",      IDM_DISCONNECT
+        MENUITEM "E&xit",                   IDM_EXIT
+        MENUITEM SEPARATOR        
+    END
+    POPUP "&Action"
+	BEGIN
+		MENUITEM SEPARATOR
+		MENUITEM "&Broadcast Message", ID_BROADCAST_MESSAGE
+		//MENUITEM "&Get Online Players", ID_LIST_PLAYERS
+		POPUP "&Player Actions"
+		BEGIN
+			MENUITEM "&Kick Player", ID_KICK_PLAYER
+			MENUITEM "&Premium Account", ID_PREMIUM_ACCOUNT
+			MENUITEM "&Outfit Addon", ID_OUTFIT_ADDON
+			POPUP "&Ban Player"
+			BEGIN
+				MENUITEM "&Ban Player", ID_BAN_PLAYER
+				MENUITEM "&Ban Account", ID_BAN_ACCOUNT
+				MENUITEM "&Ban IP-Address", ID_BAN_IP_ADDRESS
+			END
+		END
+		POPUP "&Reload File"
+		BEGIN
+			MENUITEM "&Actions", ID_RELOAD_ACTIONS
+			MENUITEM "&Commands", ID_RELOAD_COMMANDS
+			MENUITEM "&Config", ID_RELOAD_CONFIG
+			MENUITEM "&Monsters", ID_RELOAD_MONSTERS
+			MENUITEM "&Movements", ID_RELOAD_MOVEMENTS
+			MENUITEM "&Raids", ID_RELOAD_RAIDS
+			MENUITEM "&Spells", ID_RELOAD_SPELLS
+			MENUITEM "&Talkactions", ID_RELOAD_TALKACTIONS
+			MENUITEM "&Weapons", ID_RELOAD_WEAPONS
+			MENUITEM SEPARATOR
+			MENUITEM "&Reload All", ID_RELOAD_EVERYTHING
+		END
+		POPUP "&Change World Type"
+		BEGIN
+			MENUITEM "&Non-PvP", ID_WORLD_TYPE_NO_PVP
+			MENUITEM "&PvP", ID_WORLD_TYPE_PVP
+			MENUITEM "&PvP-Enforced", ID_WORLD_TYPE_PVP_ENFORCED
+		END
+		POPUP "&Others"
+		BEGIN
+			MENUITEM "&Execute Raid", ID_EXECUTE_RAID
+			MENUITEM "&Force Server Save", ID_SERVER_SAVE
+			MENUITEM "&Clean Map", ID_CLEAN_MAP
+			MENUITEM "&Set Max Players", ID_PLAYER_LIMIT
+		END
+	END
+    POPUP "&About"
+    BEGIN
+         MENUITEM "&About",                     IDM_ABOUT 
+    END           
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_MYINPUTBOX ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+CAPTION "About"
+FONT 7, "System"
+BEGIN
+    ICON            IDI_MYINPUTBOX,IDC_MYICON,14,9,16,16
+    LTEXT           "Evolutions Remote-Control",IDC_STATIC,49,10,119,8
+    LTEXT           "Version 0.7.7",IDC_STATIC,49,20,119,8
+    LTEXT           "Copyright© 2007:",IDC_STATIC,49,30,119,8
+    LTEXT           "Xidaozu and Junkfood",IDC_STATIC,49,40,119,8
+END
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Evolutions Remote-Control 0.7.7"
+    IDS_HELLO               "Hello Evolutions-user"
+    IDC_MYINPUTBOX          "Evolutions Remote-Control 0.7.7"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<outfits>
+	<!-- Female outfits -->
+	<outfit type="0" looktype="136" addons="3" name="Citizen" premium="0"/>
+	<outfit type="0" looktype="137" addons="3" name="Hunter" premium="0"/>
+	<outfit type="0" looktype="138" addons="3" name="Summoner" premium="1"/>
+	<outfit type="0" looktype="139" addons="3" name="Knight" premium="0"/>
+	<outfit type="0" looktype="140" addons="3" name="Nobleman" premium="1"/>
+	<outfit type="0" looktype="141" addons="3" name="Mage" premium="0"/>
+	<outfit type="0" looktype="142" addons="3" name="Warrior" premium="1"/>
+	<outfit type="0" looktype="147" addons="3" name="Barbarian" premium="1"/>
+	<outfit type="0" looktype="148" addons="3" name="Druid" premium="1"/>
+	<outfit type="0" looktype="149" addons="3" name="Wizard" premium="1"/>
+	<outfit type="0" looktype="150" addons="3" name="Oriental" premium="1"/>
+	<outfit type="0" looktype="155" addons="3" name="Pirate" premium="1"/>
+	<outfit type="0" looktype="156" addons="3" name="Assassin" premium="1"/>
+	<outfit type="0" looktype="157" addons="3" name="Beggar" premium="1"/>
+	<outfit type="0" looktype="158" addons="3" name="Shaman" premium="1"/>
+	<!-- Male outfits -->
+	<outfit type="1" looktype="128" addons="0" name="Citizen" premium="0"/>
+	<outfit type="1" looktype="129" addons="0" name="Hunter" premium="0"/>
+	<outfit type="1" looktype="130" addons="0" name="Mage" premium="0"/>
+	<outfit type="1" looktype="131" addons="0" name="Knight" premium="0"/>
+	<outfit type="1" looktype="132" addons="3" name="Nobleman" premium="1"/>
+	<outfit type="1" looktype="133" addons="3" name="Summoner" premium="1"/>
+	<outfit type="1" looktype="134" addons="3" name="Warrior" premium="1"/>
+	<outfit type="1" looktype="143" addons="3" name="Barbarian" premium="1"/>
+	<outfit type="1" looktype="144" addons="3" name="Druid" premium="1"/>
+	<outfit type="1" looktype="145" addons="3" name="Wizard" premium="1"/>
+	<outfit type="1" looktype="146" addons="3" name="Oriental" premium="1"/>
+	<outfit type="1" looktype="151" addons="3" name="Pirate" premium="1"/>
+	<outfit type="1" looktype="152" addons="3" name="Assassin" premium="1"/>
+	<outfit type="1" looktype="153" addons="3" name="Beggar" premium="1"/>
+	<outfit type="1" looktype="154" addons="3" name="Shaman" premium="1"/>
+	<!-- Elf outfits -->
+	<outfit type="2" looktype="159" addons="3" name="Elf" premium="1"/>
+	<!-- Dwarf outfits -->
+	<outfit type="2" looktype="160" addons="3" name="Dwarf" premium="1"/>
+	<!-- Frog outfits -->
+	<outfit type="2" looktype="226" addons="3" name="Frog" premium="1"/>
+	<!-- Cult -->
+	<outfit type="2" looktype="194" addons="3" name="Cult" premium="1"/>
+</outfits>

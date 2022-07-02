@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Elf Arcanist" tp="1" nameDescription="an elf arcanist" species="elf" race="blood" experience="174" speed="220" manacost="0">
+    <health now="220" max="220"/>
+    <look type="63" head="20" body="30" legs="40" feet="50" corpse="2979"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="50"/>
+    </flags>
+    <attacks>
+      <attack name="heavy magic missile" interval="5000" chance="70" min="-50" max="-90"/>
+      <attack name="heavy magic missile" interval="2500" chance="40" min="-50" max="-90"/>
+      <attack name="sudden death" interval="7000" chance="85" min="-175" max="-250"/>
+      <attack name="sudden death" interval="3500" chance="35" min="-175" max="-250"/>
+      <attack name="arrow" interval="1000" chance="45" min="-10" max="-70"/>
+      <attack name="arrow" interval="1000" chance="90" min="-10" max="-30"/>
+    </attacks>
+    <defenses armor="16" defense="13"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="20" chance1="100000" chancemax="0"/>
+      <item id="1949" chance="10000"/>
+      <item id="2578" chance="5000"/>
+      <item id="2260" chance="4000"/>
+      <item id="2401" chance="3000"/>
+      <item id="2642" chance="20000"/>
+      <item id="2682" chance="6666"/>
+      <item id="2802" countmax="1" chance1="10000" chancemax="0"/>
+      <item id="2600" chance="33333"/>
+      <item id="2177" chance="2857"/>
+      <item id="2689" countmax="3" chance1="20000" chancemax="0"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2652" chance="5000"/>
+          <item id="2544" countmax="10" chance1="20000" chancemax="0"/>
+          <item id="2456" chance="10000"/>
+          <item id="2032" chance="4000"/>
+          <item id="2062" chance="2857"/>
+          <item id="2125" chance="1818"/>
+          <item id="2154" chance="1333"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

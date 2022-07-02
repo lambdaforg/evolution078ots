@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Necromancer" tp="1" species="undead" nameDescription="a necromancer" race="blood" experience="580" speed="188" manacost="0">
+    <health now="580" max="580"/>
+    <look type="9" head="20" body="30" legs="40" feet="50" corpse="3128"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-50"/>
+      <attack name="poison spit" interval="2500" chance="60" min="-60" max="-90"/>
+      <attack name="life drain" interval="3500" chance="60"/>
+    </attacks>
+    <defenses armor="29" defense="31">
+      <defense name="light healing" interval="2000" chance="60" min="15" max="45"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="5">
+      <summon name="Skeleton" interval="5000" chance="20"/>
+      <summon name="Ghoul" interval="4000" chance="18"/>
+      <summon name="Mummy" interval="3000" chance="14"/>
+    </summons>
+    <voices interval="2000" chance="5">
+      <voice sentence="Taste the sweetness of death!"/>
+      <voice sentence="Your corpse will be mine!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="40" chance1="100000" chancemax="0"/>
+      <item id="2032" chance="10000"/>
+      <item id="2804" countmax="2" chance1="20000" chancemax="0"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2412" chance="10000"/>
+          <item id="2229" countmax="3" chance1="20000" chancemax="0"/>
+          <item id="2747" chance="20000"/>
+          <item id="2436" chance="1000"/>
+          <item id="2663" chance="909"/>
+          <item id="2195" chance="666"/>
+          <item id="2423" chance="5000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

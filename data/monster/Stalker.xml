@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Stalker" tp="1" species="undead"  nameDescription="a stalker" race="blood" experience="150" speed="160" manacost="200">
+    <health now="150" max="150"/>
+    <look type="128" head="95" body="116" legs="95" feet="114" corpse="3128"/>
+    <targetchange/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="1"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-10" max="-50"/>
+    </attacks>
+    <defenses armor="15" defense="20">
+     <defense name="plinkvis" interval="60000" chance="0" duration="5000">
+        <attribute key="areaEffect" value="blueshimmer"/>
+      </defense>
+ </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="10" chance1="80000" chancemax="0"/>
+    </loot>
+  </monster>

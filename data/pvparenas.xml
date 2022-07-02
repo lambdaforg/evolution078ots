@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pvparenas>
+	<pvparena exitx="1039" exity="988" exitz="8" allowsummons="no" multi-combat="no" addskilltries="no" allowfields="no">
+		<tiles fromx="1041" fromy="985" fromz="9" tox="1052" toy="991" toz="9"/>
+	</pvparena>
+</pvparenas>

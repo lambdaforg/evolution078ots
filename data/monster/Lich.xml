@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Lich" species="undead" nameDescription="a lich" race="undead" experience="900" speed="270" manacost="0">
+    <health now="880" max="880"/>
+    <look type="99" head="95" body="116" legs="119" feet="115" corpse="3025"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="80"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-10" max="-90"/>
+      <attack name="Sudden Death" interval="1700" chance="45" min="-80" max="-190"/>
+      <attack name="Heavy Magic Missile" interval="2000" chance="65" min="-40" max="-70"/>
+    </attacks>
+    <defenses armor="35" defense="40">
+      <defense name="light healing" interval="2000" chance="40" min="20" max="80"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="Oh... A little intruder..."/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+      <item id="2401" chance="10000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2237" chance="10000"/>
+          <item id="2148" countmax="12" chance1="80000" chancemax="0"/>
+          <item id="2175" chance="10000"/>
+          <item id="2179" chance="1000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

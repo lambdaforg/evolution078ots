@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Cobra" species="poison" nameDescription="a cobra" race="venom" experience="30" speed="150" manacost="275">
+    <health now="65" max="65"/>
+    <look type="81" head="20" body="30" legs="40" feet="50" corpse="3007"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="1"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="1"/>
+      <flag pushable="1"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="10"/>
+    </flags>
+    <attacks>
+      <attack name="poison field" interval="1000" chance="100" min="-5" max="-13"/>
+    </attacks>
+    <defenses armor="3" defense="5"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="0"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <loot>
+      <item id="2220" chance="33333"/>
+      <item id="2230" chance="20000"/>
+    </loot>
+  </monster>

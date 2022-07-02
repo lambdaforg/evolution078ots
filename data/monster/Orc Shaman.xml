@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Orc Shaman" tp="1" species="orc" nameDescription="an orc shaman" race="blood" experience="110" speed="140" manacost="0">
+    <health now="115" max="115"/>
+    <look type="6" head="0" body="0" legs="0" feet="0" corpse="2860"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="0"/>
+      <flag pushable="1"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-15"/>
+      <attack name="soul fire" interval="550" chance="20"/>
+      <attack name="heavy magic missile" interval="3000" chance="60" min="-10" max="-50"/>
+    </attacks>
+    <defenses armor="7" defense="9">
+      <defense name="light healing" interval="2750" chance="70"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="0"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons max="5">
+      <summon name="Snake" interval="2000" chance="28"/>
+    </summons>
+    <voices interval="2000" chance="5">
+      <voice sentence="Grak brrretz gulu."/>
+      <voice sentence="Huumans stinkk!"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="20" chance1="100000" chancemax="0"/>
+      <item id="2401" chance="2222"/>
+      <item id="2458" chance="2222"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2817" chance="5000"/>
+          <item id="2389" countmax="1" chance1="4000" chancemax="0"/>
+          <item id="2369" chance="3333"/>
+          <item id="2190" chance="1538"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

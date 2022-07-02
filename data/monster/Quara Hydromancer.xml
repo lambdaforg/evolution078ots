@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Quara Hydromancer" tp="1" species="water" nameDescription="a quara hydromancer" race="undead" experience="800" speed="180" manacost="0">
+    <health now="1100" max="1100"/>
+    <look type="47" head="0" body="0" legs="0" feet="0" corpse="6066"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-1" max="-145"/>
+    </attacks>
+    <defenses armor="25" defense="35"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="0"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="Qua hah tsh!"/>
+      <voice sentence="Blubber"/>
+    </voices>
+    <loot>
+      <item id="2148" countmax="75" chance1="100000" chancemax="0"/>
+      <item id="2401" chance="14000"/>
+      <item id="2143" countmax="2" chance1="14000" chancemax="0"/>
+      <item id="2377" chance="14000"/>
+    </loot>
+  </monster>

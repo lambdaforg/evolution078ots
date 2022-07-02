@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Dwarf Geomancer" species="dwarf" tp="1" nameDescription="a dwarf geomancer" race="blood" experience="245" speed="200" manacost="0">
+    <health now="380" max="380"/>
+    <look type="66" head="20" body="30" legs="40" feet="50" corpse="2987"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="4"/>
+      <flag runonhealth="100"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-27" max="-54"/>
+      <attack name="large rock" interval="3000" chance="50" min="-41" max="-120"/>
+      <attack name="mana drain" interval="4000" chance="30"/>
+    </attacks>
+    <defenses armor="15" defense="19">
+      <defense name="light healing" interval="2000" chance="60" min="15" max="45"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="0"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="20" chance1="100000" chancemax="0"/>
+      <item id="2673" countmax="3" chance1="6666" chancemax="0"/>
+      <item id="2260" chance="4000"/>
+      <item id="2649" chance="10000"/>
+      <item id="2643" chance="20000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2162" chance="2500"/>
+          <item id="2787" countmax="3" chance1="20000" chancemax="0"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>
