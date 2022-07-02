@@ -26,6 +26,6 @@ List of bugs/crash if you wanna repair or disabled to stable use engine
 
 All of those bugs is related for only engine (source)
 
-Two of them, and mostly engine bugs and crash caused by bad network handling with client. If you wanna use it, you need it a lot of ram, either after player logout can lag your server simply exit from server and then log in with other players keep spamming spells. 
+Two of them, and mostly engine bugs and crash caused by bad network handling with client. If you wanna use it, you need it a lot of ram, either player can lag your server simply exit from server and then log in other character with players and keep spamming spells (player has to have fire or something to be in server)
 
 Server propably has race condition
